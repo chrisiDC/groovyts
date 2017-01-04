@@ -1,0 +1,19 @@
+{
+  "name": "groovyts",
+  "version": "1.0.0",
+  "description": "tool library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisiDC/groovyts.git"
+  },
+  "author": "huber christian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisiDC/groovyts/issues"
+  },
+  "homepage": "https://github.com/chrisiDC/groovyts#readme"
+}
