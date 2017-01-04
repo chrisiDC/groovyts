@@ -38,8 +38,8 @@ export class ExpressAuthentication {
                     if (user.password === req.body.password) {
                         // if user is found and password is right create a token
 
-                        let token = jwt encode(user, this.key);
-                        res.json({success: true, token: 'JWT ' + token});
+                       /* let token = jwt encode(user, this.key);
+                        res.json({success: true, token: 'JWT ' + token});*/
 
                     }
                     else {

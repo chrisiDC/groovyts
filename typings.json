@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "inquirer": "registry:npm/inquirer#1.0.0+20160723033700",
+    "passport-jwt": "registry:dt/passport-jwt#2.0.0+20160428045346",
+    "passport-strategy": "registry:dt/passport-strategy#0.2.0+20160708003644"
+  },
+  "globalDependencies": {
+    "angular": "registry:dt/angular#1.5.0+20161016133926",
+    "chai": "registry:dt/chai#3.4.0+20160601211834",
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160726072212",
+    "express": "registry:dt/express#4.0.0+20160317120654",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#0.0.0+20160322035842",
+    "jquery": "registry:dt/jquery#1.10.0+20160929162922",
+    "lodash": "registry:dt/lodash#3.10.0+20160330154726",
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654",
+    "mongodb": "registry:dt/mongodb#2.1.0+20160602142941",
+    "node": "registry:dt/node#6.0.0+20160524002506",
+    "passport": "registry:dt/passport#0.3.0+20161228203806",
+    "passport-local": "registry:dt/passport-local#0.0.0+20160316155526",
+    "postal": "registry:dt/postal#1.0.8+20160425155829",
+    "q": "registry:dt/q#0.0.0+20161004185634",
+    "socket.io": "registry:dt/socket.io#1.4.4+20160909205835",
+    "toastr": "registry:dt/toastr#2.1.3+20161123234806",
+    "typescript": "registry:dt/typescript#0.4.0+20160317120654",
+    "winston": "registry:dt/winston#0.0.0+20160417152829",
+    "socket.io-client": "registry:dt/socket.io-client#1.4.4+20160317120654"
+  }
+}

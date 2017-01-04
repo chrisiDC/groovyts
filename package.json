@@ -4,7 +4,9 @@
   "description": "tool library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsc": "tsc -p tsconfig.json -w",
+    "test": "mocha src/tests --recursive --reporter mochawesome -w",
+    "browserify": "browserify index.js  -d  -v --no-bundle-external | exorcist bundle.js.map > bundle.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,24 @@
   "bugs": {
     "url": "https://github.com/chrisiDC/groovyts/issues"
   },
-  "homepage": "https://github.com/chrisiDC/groovyts#readme"
+  "homepage": "https://github.com/chrisiDC/groovyts#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "lodash": "^4.16.3",
+    "mongodb": "^2.2.10",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "q": "^1.4.1",
+    "socket.io": "^1.5.0",
+    "toastr": "^2.1.2",
+    "winston": "^2.2.0",
+    "socket.io-client": "^1.5.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chakram": "^1.5.0",
+    "mocha": "^3.1.0",
+    "mochawesome": "^1.5.3",
+    "typescript": "^2.0.3"
+  }
 }
