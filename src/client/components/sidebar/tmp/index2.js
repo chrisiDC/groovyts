@@ -4,11 +4,14 @@
     $(document).ready(function () {
 
         $('#sidebar .collapse').on('show.bs.collapse', function (event) {
-            console.log($("#sidebar a[href][aria-expanded='true']"));
-            $("#sidebar a[href][aria-expanded='true']").collapse("hide");
-            $("#item1").collapse("hide");
+
+            var id = $(event.currentTarget).attr("id");
+            $(event.currentTarget).parent().children(".in").not("#"+id).collapse("hide");
         });
 
+        $('#sidebar .collapse').on('hidden.bs.collapse', function (event) {
+            $(event.currentTarget).find(".in").collapse("hide");
+        });
 
 
     });
