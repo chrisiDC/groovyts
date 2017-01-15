@@ -1,0 +1,28 @@
+{
+  "name": "groovyts",
+  "version": "1.0.0",
+  "description": "tool library",
+  "main": "index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "sassify_sidebar": "node-sass -w --source-map true  components/sidebar/tmp/_sidebar.scss sidebar.css",
+    "start": "browser-sync start --config bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisiDC/groovyts.git"
+  },
+  "author": "huber christian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisiDC/groovyts/issues"
+  },
+  "homepage": "https://github.com/chrisiDC/groovyts#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "bs-html-injector": "^3.0.3"
+  }
+}

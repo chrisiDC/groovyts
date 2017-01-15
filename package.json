@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "tool library",
   "main": "index.js",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
+    "preinstall": "npm install autodts",
+    "postinstall": "autodts link",
+    "prepublish": "tsc && autodts generate",
     "tsc": "tsc -p tsconfig.json -w",
     "test": "mocha src/tests --recursive --reporter mochawesome -w",
     "browserify": "browserify index.js  -d  -v --no-bundle-external | exorcist bundle.js.map > bundle.js"
@@ -19,6 +25,7 @@
   },
   "homepage": "https://github.com/chrisiDC/groovyts#readme",
   "dependencies": {
+    "dts-bundle": "^0.6.1",
     "express": "^4.14.0",
     "lodash": "^4.16.3",
     "mongodb": "^2.2.10",
@@ -26,9 +33,9 @@
     "passport-jwt": "^2.2.1",
     "q": "^1.4.1",
     "socket.io": "^1.5.0",
+    "socket.io-client": "^1.5.1",
     "toastr": "^2.1.2",
-    "winston": "^2.2.0",
-    "socket.io-client": "^1.5.1"
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",

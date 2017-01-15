@@ -1,0 +1,13 @@
+{
+  "name": "groovyts",
+  "version": "1.0.0",
+  "description": "tool library",
+  "main": "index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "sassify": "node-sass -w --source-map true  sidebar2.scss sidebar2.css"
+  }
+
+}

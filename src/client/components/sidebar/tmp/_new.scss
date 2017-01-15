@@ -1,0 +1,15 @@
+.icon-expand
+{
+  display: none;
+}
+.collapsed {
+  .icon-collapse
+  {
+    display: none;
+  }
+
+  .icon-expand
+  {
+    display: inherit;
+  }
+}
