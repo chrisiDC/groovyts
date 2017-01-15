@@ -5,8 +5,13 @@
 
         var link = $("#selectedMenuItem").val();
 
-        var linkItem = $("a[href='"+link+"']").next();
-        linkItem.parents(".list-group.collapse").collapse("show");
+        if (link)
+        {
+            var currentLink = $("a[href='"+link+"']");
+            currentLink.addClass("active");
+            var linkTarget = currentLink.next();
+            linkTarget.parents(".list-group.collapse").collapse("show");
+        }
 
         setTimeout(function(){
             $('#sidebar .collapse').on('show.bs.collapse', function (event) {
