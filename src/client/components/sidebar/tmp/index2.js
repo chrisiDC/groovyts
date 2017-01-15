@@ -8,22 +8,25 @@
         var linkItem = $("a[href='"+link+"']").next();
         linkItem.parents(".list-group.collapse").collapse("show");
 
-        $('#sidebar .collapse').on('show.bs.collapse', function (event) {
+        setTimeout(function(){
+            $('#sidebar .collapse').on('show.bs.collapse', function (event) {
 
-            var id = $(event.currentTarget).attr("id");
-            $(event.currentTarget).parent().children(".in").not("#" + id).collapse("hide");
-        });
+                var id = $(event.currentTarget).attr("id");
+                $(event.currentTarget).parent().children(".in").not("#" + id).collapse("hide");
+            });
 
-        $('#sidebar .collapse').on('hidden.bs.collapse', function (event) {
-            $(event.currentTarget).find(".in").collapse("hide");
-        });
+            $('#sidebar .collapse').on('hidden.bs.collapse', function (event) {
+                $(event.currentTarget).find(".in").collapse("hide");
+            });
 
-        $("#sidebar-mini a[href]").click(function () {
-            toggleSidebar("default")
-        });
-        $("#sidebar-toggle").click(function () {
-            toggleSidebar("mini")
-        });
+            $("#sidebar-mini a[href]").click(function () {
+                toggleSidebar("default")
+            });
+            $("#sidebar-toggle").click(function () {
+                toggleSidebar("mini");
+            });
+        },500)
+
 
 
     });
